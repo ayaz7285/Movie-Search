@@ -1,0 +1,37 @@
+<%- include("./partials/header")%>
+
+<style>
+
+  body{
+      background:url(../public/assets/bg3.jpg)
+  }
+  
+  </style>
+
+
+<div class="container">
+  <br>
+  <div class="card flex-row flex-wrap">
+    <div class="card-header border-0 col-4 mx-auto text-center">
+      <img src="<%=movie.Poster%>" alt="Poster" />
+    </div>
+    <div class="card-block px-2">
+      <h4 class="card-title"><%=movie.Title%></h4>
+      <p class="card-text">Plot: <%=movie.Plot%></p>
+      <p class="card-text">Year: <%=movie.Year%></p>
+      <p class="card-text">Rated: <%=movie.Rated%></p>
+      <p class="card-text">Runtime: <%=movie.Runtime%></p>
+      <p class="card-text">Genre: <%=movie.Genre%></p>
+      <p class="card-text">Director: <%=movie.Director%></p>
+      <p class="card-text">Actors: <%=movie.Actors%></p>
+      <p class="card-text">Language: <%=movie.Language%></p>
+    </div>
+    <div class="w-100"></div>
+    <div class="card-footer w-100 text-muted">
+      <p> Type:       <%=movie.Type%></p>
+      <p>imdbRating: <%=movie.imdbRating%></p>
+      <p>Box Office: <%=movie.BoxOffice%></p>
+    </div>
+  </div>
+</div>
+<%- include("./partials/footer")%>
